@@ -1,4 +1,3 @@
-
 let submitButton = document.getElementById("submitButton");
 let pwd = document.getElementById("pwd");
 let pwd2 = document.getElementById("pwd2");

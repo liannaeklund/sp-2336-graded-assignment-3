@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation Test</title>
+    <script src="task1.js" defer></script>
+</head>
+
+<body>
+    <h2>Sign Up</h2>
+
+    <form>
+        <label>Username:
+            <input type="text" id="username" required>
+        </label>
+        <br><br>
+
+        <label>Email:
+            <input type="email" id="email" required>
+        </label>
+        <br><br>
+
+        <label>Password:
+            <input type="password" id="pwd" 
+                   pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+                   required>
+        </label>
+        <br><br>
+
+        <label>Confirm Password:
+            <input type="password" id="pwd2" required>
+        </label>
+        <br><br>
+
+        <button id="submitButton">Submit</button>
+    </form>
+</body>
+</html>
